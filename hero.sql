@@ -169,3 +169,6 @@ VALUES
     LEFT JOIN public.player p ON h.hero_id = p.hero_id
     GROUP BY c.class_name
     ORDER BY average_level DESC;
+
+    ALTER TABLE public.item
+    ADD item_pricem DECIMAL(10, 2);
